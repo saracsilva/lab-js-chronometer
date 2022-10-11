@@ -21,7 +21,17 @@ class Chronometer {
   }
 
   computeTwoDigitNumber(value) {
-    // ... your code goes here
+    let newValue = value.toString();
+    let string = "";
+    //if (value.length < 2) () => (newValue = `0${value.toString(2)}`);
+
+    if (newValue.length < 2) {
+      string = `0${newValue}`;
+    } else if (newValue.length === 2) {
+      string = newValue;
+    }
+    console.log(string);
+    return string;
   }
 
   stop() {
