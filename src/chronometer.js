@@ -10,15 +10,14 @@ class Chronometer {
     }, 1000);
 
     if (printTimeCallback) setInterval(printTimeCallback, 1000);
-    // const intervalId = setInterval(eatDinner, 1000);
   }
 
   getMinutes() {
-    // ... your code goes here
+    return Math.round(this.currentTime / 60);
   }
 
   getSeconds() {
-    // ... your code goes here
+    return Math.round(this.currentTime % 60);
   }
 
   computeTwoDigitNumber(value) {
